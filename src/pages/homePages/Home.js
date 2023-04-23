@@ -46,27 +46,27 @@ export default function HomePage() {
         url: 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v3/get-historical-data',
         params: { symbol: '^NSEI', region: 'US' },
         headers: {
-            'X-RapidAPI-Key': '83063fdc73msha1be2267fb6b4a2p151d4fjsn98f342de4242',
+            'X-RapidAPI-Key': '641772311fmsh72fe1c87d808123p1fc405jsndd42f7983e16',
             'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
-        }
+          }
     };
     const options2 = {
         method: 'GET',
         url: 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v3/get-historical-data',
         params: { symbol: '^BSESN', region: 'US' },
         headers: {
-            'X-RapidAPI-Key': '83063fdc73msha1be2267fb6b4a2p151d4fjsn98f342de4242',
+            'X-RapidAPI-Key': '641772311fmsh72fe1c87d808123p1fc405jsndd42f7983e16',
             'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
-        }
+          }
     };
     const options3 = {
         method: 'GET',
         url: 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v3/get-historical-data',
         params: { symbol: '^IXIC', region: 'US' },
         headers: {
-            'X-RapidAPI-Key': '83063fdc73msha1be2267fb6b4a2p151d4fjsn98f342de4242',
+            'X-RapidAPI-Key': '641772311fmsh72fe1c87d808123p1fc405jsndd42f7983e16',
             'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
-        }
+          }
     };
     const fetchData = async () => {
         await axios
@@ -148,23 +148,23 @@ export default function HomePage() {
     let senSexgrowthinPer = 0;
     let nasdaqgrowthinPer = 0;
 
-    // if (nifty50Data && sensexData && nasdaqData) {
-    //     nift50CurrentData = nifty50Data[0].adjclose.toFixed(2);
-    //     senSexCurrentData = sensexData[0].adjclose.toFixed(2);
-    //     nasdaqCurrentData = nasdaqData[0].adjclose.toFixed(2);
+    if (nifty50Data.length>0 && sensexData.length>0 && nasdaqData.length>0) {
+        nift50CurrentData = nifty50Data[0].adjclose.toFixed(2);
+        senSexCurrentData = sensexData[0].adjclose.toFixed(2);
+        nasdaqCurrentData = nasdaqData[0].adjclose.toFixed(2);
 
-    //     nift50PreviousData = nifty50Data[1].adjclose.toFixed(2);
-    //     senSexPreviousData = sensexData[1].adjclose.toFixed(2);
-    //     nasdaqPreviousData = nasdaqData[1].adjclose.toFixed(2);
+        nift50PreviousData = nifty50Data[1].adjclose.toFixed(2);
+        senSexPreviousData = sensexData[1].adjclose.toFixed(2);
+        nasdaqPreviousData = nasdaqData[1].adjclose.toFixed(2);
 
-    //     nift50growth = (nift50CurrentData - nift50PreviousData).toFixed(2);
-    //     senSexgrowth = (senSexCurrentData - senSexPreviousData).toFixed(2);
-    //     nasdaqgrowth = (nasdaqCurrentData - nasdaqPreviousData).toFixed(2);
+        nift50growth = (nift50CurrentData - nift50PreviousData).toFixed(2);
+        senSexgrowth = (senSexCurrentData - senSexPreviousData).toFixed(2);
+        nasdaqgrowth = (nasdaqCurrentData - nasdaqPreviousData).toFixed(2);
 
-    //     nift50growthinPer = ((nift50growth / nift50CurrentData) * 100).toFixed(2);
-    //     senSexgrowthinPer = ((senSexgrowth / senSexCurrentData) * 100).toFixed(2);
-    //     nasdaqgrowthinPer = ((nasdaqgrowth / nasdaqCurrentData) * 100).toFixed(2);
-    // }
+        nift50growthinPer = ((nift50growth / nift50CurrentData) * 100).toFixed(2);
+        senSexgrowthinPer = ((senSexgrowth / senSexCurrentData) * 100).toFixed(2);
+        nasdaqgrowthinPer = ((nasdaqgrowth / nasdaqCurrentData) * 100).toFixed(2);
+    }
 
     const handleLogin = (e) => {
         e.preventDefault();

@@ -227,7 +227,7 @@ export default function FullScreenDialog() {
                 <AppBar sx={{ position: 'relative' }}>
                     <Toolbar>
                         <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-                            ABC STOCK
+                        InvestoMart
                         </Typography>
                         <Button color="inherit" onClick={handleClose}>
                             Close

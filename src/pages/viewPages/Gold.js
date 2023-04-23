@@ -124,9 +124,9 @@ export default function FullScreenDialog() {
         url: 'https://yh-finance.p.rapidapi.com/stock/v3/get-historical-data',
         params: { symbol: 'GC=F', region: 'US' },
         headers: {
-            'X-RapidAPI-Key': '83063fdc73msha1be2267fb6b4a2p151d4fjsn98f342de4242',
+            'X-RapidAPI-Key': '641772311fmsh72fe1c87d808123p1fc405jsndd42f7983e16',
             'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
-        }
+          }
     };
 
     const calculateResult = async () => {
@@ -238,7 +238,7 @@ export default function FullScreenDialog() {
                 <AppBar sx={{ position: 'relative' }}>
                     <Toolbar>
                         <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-                            ABC STOCK
+                        InvestoMart
                         </Typography>
                         <Button color="inherit" onClick={handleClose}>
                             Close
