@@ -19,13 +19,13 @@ import goldImg from '../../assets/img/4. Gold.jpeg.jpg';
 import mutualFundImg from '../../assets/img/3.1 MF.jpg';
 import fixedDepositImg from '../../assets/img/5.2 fd.jpeg.jpg';
 import govtSchemesImg from '../../assets/img/6. govt.jpg';
-import Stack from '@mui/material/Stack';
 import newstockImg from '../../assets/img/newstock.jpg';
 import newcryptoImg from '../../assets/img/new Crypto.jpg';
 import newgoldImg from '../../assets/img/new gold.jpg';
 import newmutualFundImg from '../../assets/img/new Mutual funds.jpg';
 import newfixedDepositImg from '../../assets/img/new  fd.jpg';
 import newgovtSchemesImg from '../../assets/img/newGovtSchemes.jpg';
+import aboutUs2 from '../../assets/img/best-about-us-pages.jpg'
 import { Link } from 'react-scroll'
 
 export default function HomePage() {
@@ -244,7 +244,7 @@ export default function HomePage() {
                     <div className="row gy-4">
                         <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
                             <div className="icon flex-shrink-0">
-                                <i className="fa-solid fa-cart-flatbed"></i>
+                                <i className="bi bi-currency-dollar"></i>
                             </div>
                             <div>
                                 <h4 className="title">NIFTY 50</h4>
@@ -309,7 +309,7 @@ export default function HomePage() {
 
                         <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                             <div className="icon flex-shrink-0">
-                                <i className="fa-solid fa-truck"></i>
+                                <i className="bi bi-graph-down"></i>
                             </div>
                             <div>
                                 <h4 className="title">S&P BSE SENSEX</h4>
@@ -375,7 +375,7 @@ export default function HomePage() {
 
                         <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
                             <div className="icon flex-shrink-0">
-                                <i className="fa-solid fa-truck-ramp-box"></i>
+                                <i className="bi bi-bar-chart-fill"></i>
                             </div>
                             <div>
                                 <h4 className="title">NASDAQ</h4>
@@ -449,15 +449,15 @@ export default function HomePage() {
                         <div className="col-lg-6 position-relative ">
                             <div className="position-relative" style={{ marginTop: 50 }}>
                                 <img src={img1} className="img-fluid" alt="" style={{ height: '50%', width: '110%' }} />
-                                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn">
+                                {/* <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn">
                                     {}
-                                </a>
+                                </a> */}
                             </div>
-                            <div className="position-relative" style={{ marginTop: 50 }}>
-                                <img src={img1} className="img-fluid" alt="" style={{ height: '50%', width: '110%' }} />
-                                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn">
+                            <div className="position-relative" style={{ marginTop: 70 }}>
+                                <img src={aboutUs2} className="img-fluid" alt="" style={{ height: '50%', width: '110%' }} />
+                                {/* <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn">
                                     {}
-                                </a>
+                                </a> */}
                             </div>
                         </div>
 
@@ -1304,18 +1304,18 @@ export default function HomePage() {
                                 make informed decisions for financial success.
                             </p>
                             <div className="social-links d-flex mt-4">
-                                <Link href="#" className="twitter text-decoration-none">
+                                <a href="https://www.google.com/" target="_blank" className="twitter text-decoration-none">
                                     <i className="bi bi-twitter"></i>
-                                </Link>
-                                <Link href="#" className="facebook text-decoration-none">
+                                </a>
+                                <a href="https://www.google.com/" target="_blank" className="facebook text-decoration-none">
                                     <i className="bi bi-facebook"></i>
-                                </Link>
-                                <Link href="#" className="instagram text-decoration-none">
+                                </a>
+                                <a href="https://www.google.com/" target="_blank" className="instagram text-decoration-none">
                                     <i className="bi bi-instagram"></i>
-                                </Link>
-                                <Link href="#" className="linkedin text-decoration-none">
+                                </a>
+                                <a href="https://www.google.com/" target="_blank" className="linkedin text-decoration-none">
                                     <i className="bi bi-linkedin"></i>
-                                </Link>
+                                </a>
                             </div>
                         </div>
 

@@ -1,0 +1,113 @@
+.content{
+    padding-left: 60px;
+    padding-right: 180px;
+    width: 90%;
+}
+.question{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(42, 62, 91);
+}
+.formula{
+    background-color: #432b48;
+    color: white;
+    font-weight: bold;
+}
+.main{
+    display: flex;
+    background-color: rgba(194, 236, 234, 0.7);
+}
+/* .calculator{
+    background-color: rgba(170, 176, 239,0.6);
+    height: 60px;
+    right: 0px;
+    position: sticky;
+    top: 15vh;
+    border-radius: 8px;
+    border: 2px;
+} */
+/* .open{
+    position: relative;
+    border:1px;
+    border-radius: 4px;
+    background-color: black;
+    color: rgb(250, 250, 250);
+    height:35px;
+} */
+/* .click{
+    font-weight: bold;
+    color: rgb(18, 1, 1);
+    height: 50px;
+    padding-top: 20px;
+} */
+/* .modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(172, 204, 128);
+    z-index: 999;
+} */
+/* .close{
+    position: fixed;
+    top:0;
+    right: 0;
+    width:40px;
+    height:45px;
+    background-color: red;
+    color: white;
+    border:4px;
+    border-radius: 3px;
+    border-color: rgb(251, 246, 246);
+    text-align: center;
+} */
+.head{
+    background-color:rgba(26, 35, 126,0.9);
+    color: white;
+    font-size:40px;
+    margin: 0px;
+    width:100%;
+    height: 15vh;
+    border:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.img{
+    position: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.img2{
+    width: 700px;
+}
+.rateimg{
+    width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.underline{
+    text-align: left;
+    border-radius: .25rem;
+    padding-top: .25rem;
+    height: 4px;
+    width: 180px;
+    background: linear-gradient(90deg,#113874,#825952 50%,#f27930);
+}
+table,th,td{
+    border: 1px solid black;
+}
+
+.bankrates{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: #4f0e64;
+    font-weight: bold;
+}
+th{
+    background-color: #113874;
+    color: white;
+}
