@@ -232,9 +232,9 @@ export default function HomePage() {
                             </p>
                         </div>
 
-                        <div className="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+                        {/* <div className="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
                             <img src={logo} className="img-fluid mb-3 mb-lg-0" alt="" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
