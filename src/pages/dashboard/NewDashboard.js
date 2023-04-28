@@ -250,7 +250,7 @@ function NewDashboard() {
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} lg={12}>
                             <AnalyticEcommerce
-                                title="FIXED DIPOSITE"
+                                title="FIXED DEPOSIT"
                                 color={fixedDepositeCurrentVal < fixedDepositeSumInvested ? '#e53935' : '#52c41a'}
                                 current={fixedDepositeCurrentVal}
                                 invested={fixedDepositeSumInvested}

@@ -380,7 +380,7 @@ export default function FullScreenDialog() {
                                     style={{ margin: 10, width: 100 }}
                                     onClick={calculateResult}
                                 >
-                                    Search
+                                    Evaluate
                                 </Button>
                             </Grid>
                             <Grid item display="flex">
