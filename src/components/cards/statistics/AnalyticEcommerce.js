@@ -34,7 +34,7 @@ const AnalyticEcommerce = ({ color, title, current, invested }) => {
         if(title === 'MUTUAL FUND'){
             dispatch(openMutualFundDialogReducer({ openMutualFundDialog: true }));
         }
-        if(title==='FIXED DIPOSITE'){
+        if(title==='FIXED DEPOSIT'){
             dispatch(openFixedDepositeDialogReducer({ openFixedDepositeDialog: true }));
         }
         if(title==='GOVERNMENT SCHEMES'){

@@ -119,7 +119,7 @@ export default function FullScreenDialog() {
         return date;
     }
 
-    const date = new Date();
+    const date = new Date(dateOfInvestment);
 
     const stockDataCollentionRef = collection(db, 'GovernmentSchemes');
 
@@ -220,6 +220,7 @@ export default function FullScreenDialog() {
         setCurrentValue('');
         setRateOfInvestment('');
         setTenure('');
+        setProgress(false);
     };
     return (
         <div>

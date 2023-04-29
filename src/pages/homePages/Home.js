@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import React, { useEffect, useState } from 'react';
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import NewLoginDialog from 'pages/authentication/NewLoginDialog';
@@ -25,8 +25,8 @@ import newgoldImg from '../../assets/img/new gold.jpg';
 import newmutualFundImg from '../../assets/img/new Mutual funds.jpg';
 import newfixedDepositImg from '../../assets/img/new  fd.jpg';
 import newgovtSchemesImg from '../../assets/img/newGovtSchemes.jpg';
-import aboutUs2 from '../../assets/img/best-about-us-pages.jpg'
-import { Link } from 'react-scroll'
+import aboutUs2 from '../../assets/img/best-about-us-pages.jpg';
+import { Link } from 'react-scroll';
 
 export default function HomePage() {
     const navigate = useNavigate();
@@ -48,7 +48,7 @@ export default function HomePage() {
         headers: {
             'X-RapidAPI-Key': '47a45d4bdfmshd237f1e5901ac18p115689jsn1013f8fbc549',
             'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
-          }
+        }
     };
     const options2 = {
         method: 'GET',
@@ -57,7 +57,7 @@ export default function HomePage() {
         headers: {
             'X-RapidAPI-Key': '47a45d4bdfmshd237f1e5901ac18p115689jsn1013f8fbc549',
             'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
-          }
+        }
     };
     const options3 = {
         method: 'GET',
@@ -66,7 +66,7 @@ export default function HomePage() {
         headers: {
             'X-RapidAPI-Key': '47a45d4bdfmshd237f1e5901ac18p115689jsn1013f8fbc549',
             'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
-          }
+        }
     };
     const fetchData = async () => {
         await axios
@@ -148,7 +148,7 @@ export default function HomePage() {
     let senSexgrowthinPer = 0;
     let nasdaqgrowthinPer = 0;
 
-    if (nifty50Data.length>0 && sensexData.length>0 && nasdaqData.length>0) {
+    if (nifty50Data.length > 0 && sensexData.length > 0 && nasdaqData.length > 0) {
         nift50CurrentData = nifty50Data[0].adjclose.toFixed(2);
         senSexCurrentData = sensexData[0].adjclose.toFixed(2);
         nasdaqCurrentData = nasdaqData[0].adjclose.toFixed(2);
@@ -190,20 +190,37 @@ export default function HomePage() {
                     <nav id="navbar" className="navbar">
                         <ul>
                             <li>
-                                <Link  to="hero" spy={true} smooth={true} offset={-80} duration={500} className="active text-decoration-none">Home</Link>
+                                <Link
+                                    to="hero"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-80}
+                                    duration={500}
+                                    className="active text-decoration-none"
+                                >
+                                    Home
+                                </Link>
                             </li>
                             <li>
-                                <Link to="about" spy={true} smooth={true} offset={-80} duration={500} className=" text-decoration-none">About</Link>
+                                <Link to="about" spy={true} smooth={true} offset={-80} duration={500} className=" text-decoration-none">
+                                    About
+                                </Link>
                             </li>
                             <li>
-                                <Link to="service" spy={true} smooth={true} offset={-80} duration={500} className=" text-decoration-none">Investments</Link>
+                                <Link to="service" spy={true} smooth={true} offset={-80} duration={500} className=" text-decoration-none">
+                                    Investments
+                                </Link>
                             </li>
                             <li>
-                                <Link to="pricing" spy={true} smooth={true} offset={-80} duration={500} className=" text-decoration-none">News</Link>
+                                <Link to="pricing" spy={true} smooth={true} offset={-80} duration={500} className=" text-decoration-none">
+                                    News
+                                </Link>
                             </li>
 
                             <li>
-                                <Link to="faq" spy={true} smooth={true} offset={-80} duration={500} className=" text-decoration-none">Faqs</Link>
+                                <Link to="faq" spy={true} smooth={true} offset={-80} duration={500} className=" text-decoration-none">
+                                    Faqs
+                                </Link>
                             </li>
                             <li>
                                 <Link className="logIn text-decoration-none" onClick={handleLogin}>
@@ -258,18 +275,18 @@ export default function HomePage() {
                                                     <h2>{nift50CurrentData}</h2>
                                                 </Grid>
                                                 {nift50growth < 0 ? (
-                                                    <Grid item xs={3.5} style={{ color: 'red' }}>
+                                                    <Grid item xs={4.5} style={{ color: 'red' }}>
                                                         <h4>{nift50growth}</h4>
                                                     </Grid>
                                                 ) : (
-                                                    <Grid item xs={3.5} style={{ color: 'green' }}>
+                                                    <Grid item xs={4.5} style={{ color: 'green' }}>
                                                         <h4>+{nift50growth}</h4>
                                                     </Grid>
                                                 )}
                                                 {nift50growthinPer < 0 ? (
                                                     <Grid
                                                         item
-                                                        xs={8.5}
+                                                        xs={7.5}
                                                         style={{
                                                             marginTop: 7,
                                                             display: 'flex',
@@ -282,7 +299,7 @@ export default function HomePage() {
                                                 ) : (
                                                     <Grid
                                                         item
-                                                        xs={8.5}
+                                                        xs={7.5}
                                                         style={{
                                                             marginTop: 7,
                                                             display: 'flex',
@@ -323,11 +340,11 @@ export default function HomePage() {
                                                     <h2>{senSexCurrentData}</h2>
                                                 </Grid>
                                                 {senSexgrowth < 0 ? (
-                                                    <Grid item xs={3.5} style={{ color: 'red' }}>
+                                                    <Grid item xs={4.5} style={{ color: 'red' }}>
                                                         <h4>{senSexgrowth}</h4>
                                                     </Grid>
                                                 ) : (
-                                                    <Grid item xs={3.5} style={{ color: 'green' }}>
+                                                    <Grid item xs={4.5} style={{ color: 'green' }}>
                                                         <h4>+{senSexgrowth}</h4>
                                                     </Grid>
                                                 )}
@@ -335,7 +352,7 @@ export default function HomePage() {
                                                 {senSexgrowthinPer < 0 ? (
                                                     <Grid
                                                         item
-                                                        xs={8.5}
+                                                        xs={7.5}
                                                         style={{
                                                             marginTop: 7,
                                                             display: 'flex',
@@ -348,7 +365,7 @@ export default function HomePage() {
                                                 ) : (
                                                     <Grid
                                                         item
-                                                        xs={8.5}
+                                                        xs={7.5}
                                                         style={{
                                                             marginTop: 7,
                                                             display: 'flex',
@@ -389,11 +406,11 @@ export default function HomePage() {
                                                     <h2>{nasdaqCurrentData}</h2>
                                                 </Grid>
                                                 {nasdaqgrowth < 0 ? (
-                                                    <Grid item xs={4} style={{ color: 'red' }}>
+                                                    <Grid item xs={4.5} style={{ color: 'red' }}>
                                                         <h4>{nasdaqgrowth}</h4>
                                                     </Grid>
                                                 ) : (
-                                                    <Grid item xs={4} style={{ color: 'green' }}>
+                                                    <Grid item xs={4.5} style={{ color: 'green' }}>
                                                         <h4>+{nasdaqgrowth}</h4>
                                                     </Grid>
                                                 )}
@@ -401,7 +418,7 @@ export default function HomePage() {
                                                 {nasdaqgrowthinPer < 0 ? (
                                                     <Grid
                                                         item
-                                                        xs={8}
+                                                        xs={7.5}
                                                         style={{
                                                             marginTop: 7,
                                                             display: 'flex',
@@ -414,7 +431,7 @@ export default function HomePage() {
                                                 ) : (
                                                     <Grid
                                                         item
-                                                        xs={8}
+                                                        xs={7.5}
                                                         style={{
                                                             marginTop: 7,
                                                             display: 'flex',
