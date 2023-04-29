@@ -183,7 +183,7 @@ export default function EnhancedTable(props) {
     //Deleting Data from Firestore
 
     const deleteStockData = (e) => {
-        // setResArr(null);
+        
         dispatch(refreshDataTable({ loader: false }));
         console.log('I am delete');
         console.log(selected);
@@ -198,10 +198,6 @@ export default function EnhancedTable(props) {
             dispatch(refreshDataTable({ loader: true }));
         }, 1000);
 
-        // dispatch(refreshDataTable({ loader:false  }));
-        // setTimeout(() => {
-        //   dispatch(refreshDataTable({ loader:true  }));
-        // }, 1000);
     };
 
     // rows.forEach((item) => {

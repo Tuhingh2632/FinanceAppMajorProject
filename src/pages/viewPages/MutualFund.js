@@ -168,7 +168,7 @@ export default function FullScreenDialog() {
         url: 'https://yh-finance.p.rapidapi.com/stock/v3/get-historical-data',
         params: { symbol: stockName, region: 'US' },
         headers: {
-            'X-RapidAPI-Key': '641772311fmsh72fe1c87d808123p1fc405jsndd42f7983e16',
+            'X-RapidAPI-Key': '47a45d4bdfmshd237f1e5901ac18p115689jsn1013f8fbc549',
             'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
           }
     };
