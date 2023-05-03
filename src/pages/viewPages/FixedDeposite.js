@@ -62,24 +62,7 @@ const useStyles2 = makeStyles((theme) => ({
     }
 }));
 
-const stocks = [
-    {
-        value: '0P00005V09.BO',
-        label: 'HDFC Liquid Fund Growth'
-    }
-    // {
-    //     value: 'TSLA',
-    //     label: 'Tesla, Inc.'
-    // },
-    // {
-    //     value: 'AAPL',
-    //     label: 'Apple Inc.'
-    // },
-    // {
-    //     value: 'HTHIY',
-    //     label: 'Hitachi, Ltd.'
-    // }
-];
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -109,7 +92,6 @@ export default function FullScreenDialog() {
     const [progress, setProgress] = useState(false);
     const [stockData, setStockData] = useState([]);
     const [maturedate, setMatureDate] = useState();
-    // const [lastCheckedDate,setLastCheckedDate]=useState();
     function addMonths(date, months) {
         date.setMonth(date.getMonth() + months);
 
@@ -117,10 +99,7 @@ export default function FullScreenDialog() {
     }
 
     const date = new Date(dateOfInvestment);
-    // setLastCheckedDate(todayDate);
-    // const [storeData,setStoreData]=useState({});
     const stockDataCollentionRef = collection(db, 'FixedDeposite');
-    // const [refresh, setRefresh] = useState(false);
     const [docId, setDocId] = useState(true);
     const [userId,setuserId]=useState("");
     useEffect(()=>{

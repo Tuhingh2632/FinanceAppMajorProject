@@ -6,9 +6,7 @@ import SipResult from '../../components/Result';
 
 import { Box, Grid, Paper } from '@mui/material';
 
-// import calculateSip from '../../calculator/sip';
-// import calculateInvestment from '../../calculator/investment';
-// import calculateGain from '../../calculator/gain';
+
 
 
 
@@ -16,9 +14,6 @@ import { Box, Grid, Paper } from '@mui/material';
 const SipCalculator = () => {
 
     const calculateSip = (investment, annualRate, years) => {
-        // let monthlyRate = annualRate/12/100;
-        // let months = years * 12;
-        //let futurevalue = investment * ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) * (1 + monthlyRate);
         let futurevalue = investment * Math.pow(1 + annualRate / 100, years);
     
         return futurevalue.toFixed(2);
@@ -46,9 +41,7 @@ const SipCalculator = () => {
     }, [totalValue, totalInvestment]);
 
     return (
-        // <Grid container spacing={2}>
-        //   <Grid item xs={12}>
-        // <Paper elevation={3}>
+        
         <Grid p={3} m={3}>
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={12} md={12}>
@@ -82,9 +75,7 @@ const SipCalculator = () => {
                 </Grid>
             </Grid>
         </Grid>
-        // </Paper>
-        //   </Grid>
-        // </Grid>
+       
     );
 };
 

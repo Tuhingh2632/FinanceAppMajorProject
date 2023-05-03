@@ -29,9 +29,7 @@ const SipCalculator = () => {
     }, [totalValue, totalInvestment]);
 
     return (
-        // <Grid container spacing={2}>
-        //   <Grid item xs={12}>
-        // <Paper elevation={3}>
+       
         <Grid p={3} m={3}>
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={12} md={12}>
@@ -65,9 +63,7 @@ const SipCalculator = () => {
                 </Grid>
             </Grid>
         </Grid>
-        // </Paper>
-        //   </Grid>
-        // </Grid>
+       
     );
 };
 

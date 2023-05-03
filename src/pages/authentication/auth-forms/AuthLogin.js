@@ -95,14 +95,7 @@ const AuthLogin = () => {
                 });
         }
     });
-    // useEffect(() => {
-    //     if (userId) {
-    //         dispatch(currentUidchangeReducer({ currentUserId: userId }));
-    //         dispatch(loginRegisterBufferREducer({ loginRegisterBuffer: false }));
-           
-    //         // navigate('/finance/dashboard/default');
-    //     }
-    // }, [userId]);
+   
 
     const [showPassword, setShowPassword] = React.useState(false);
     const handleClickShowPassword = () => {

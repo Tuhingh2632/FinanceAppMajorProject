@@ -62,24 +62,7 @@ const useStyles2 = makeStyles((theme) => ({
     }
 }));
 
-// const stocks = [
-//     {
-//         value: '0P00005V09.BO',
-//         label: 'HDFC Liquid Fund Growth'
-//     }
-//     // {
-//     //     value: 'TSLA',
-//     //     label: 'Tesla, Inc.'
-//     // },
-//     // {
-//     //     value: 'AAPL',
-//     //     label: 'Apple Inc.'
-//     // },
-//     // {
-//     //     value: 'HTHIY',
-//     //     label: 'Hitachi, Ltd.'
-//     // }
-// ];
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;

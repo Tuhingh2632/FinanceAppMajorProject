@@ -86,7 +86,7 @@ const utilities = {
         },
         {
             id: 'ant-icons',
-            title: 'Stock Treading',
+            title: 'Stock Trading',
             type: 'item',
             url: 'https://sukirtiman-finance-app-stock-27jc8h.streamlit.app/',
             icon: icons.StockOutlined,

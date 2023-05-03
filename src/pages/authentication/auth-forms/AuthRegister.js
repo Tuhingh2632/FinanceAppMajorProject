@@ -82,12 +82,7 @@ const AuthRegister = () => {
             })
         },
     })
-    // useEffect(() => {
-    //     if (userId) {
-    //         dispatch(currentUidchangeReducer({ currentUserId: userId }));
-    //         navigate('/finance/dashboard/default');
-    //     }
-    // }, [userId]);
+   
 
     const [level, setLevel] = useState();
     const [showPassword, setShowPassword] = useState(false);
@@ -138,7 +133,6 @@ const AuthRegister = () => {
                         <InputLabel htmlFor="email-signup">Email Address*</InputLabel>
                         <OutlinedInput
                             fullWidth
-                            // error={Boolean(touched.email && errors.email)}
                             id="email-login"
                             type="email"
                             value={values.email}
